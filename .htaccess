@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1ff57bb66be313f97935a7e3e4aff4124bacfe752d26c812f61a3c443f14f461
-size 353
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # If the requested file or directory exists, serve it directly
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  
+  # Otherwise, route everything to index.html for React to handle
+  RewriteRule ^ index.html [L]
+</IfModule>

@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e45b5699e1933cb8828fc913a53f2d9fdf66b1bab7577f200ad9f03402dd93ae
-size 182
+# Dependencies
+node_modules/
+@alloc/
+@cloudflare/
+
+# Build output
+dist/
+
+# Wrangler / Cloudflare
+.wrangler/
+.dev.vars
+
+# OS / editor
+.DS_Store
+.vscode/
+*.local
+
+# Misc
+.env
+objects/
