@@ -1,16 +1,3 @@
-import { QueryClient } from "@tanstack/react-query";
-import { createRouter } from "@tanstack/react-router";
-import { routeTree } from "./routeTree.gen";
-
-export const getRouter = () => {
-  const queryClient = new QueryClient();
-
-  const router = createRouter({
-    routeTree,
-    context: { queryClient },
-    scrollRestoration: true,
-    defaultPreloadStaleTime: 0,
-  });
-
-  return router;
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:72b68964d3f55ba4f7dcf2a04aad9d97d7c61fabad13aec1d298f1e39ee59fcc
+size 394
